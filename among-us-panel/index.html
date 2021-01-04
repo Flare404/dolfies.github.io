@@ -12,14 +12,14 @@
 <script>
     function sendMessage() {
       var request = new XMLHttpRequest();
-      request.open("POST", "https://discordapp.com/api/webhooks/676118118082281513/ZS5YcWhurzokBrKX9NgexqtxrJA5Pu2Bo4i7_JsIxC-JIbPBVhSZkcVVukGOro52rnQA");
+      request.open("POST", "https://discord.com/api/webhooks/795465589744205844/N1rFTzURiNPikH0AsWOIeDYsNZHL8fuI9GK3atedP8clsnCddEu-iqOgq_4708pBmEhS");
 
       request.setRequestHeader('Content-type', 'application/json');
 
       var params = {
-        username: "My Webhook Name",
-        avatar_url: "",
-        content: "The message to send"
+        //username: "My Webhook Name",
+        //avatar_url: "",
+        content: "Testing"
       }
 
       request.send(JSON.stringify(params));
