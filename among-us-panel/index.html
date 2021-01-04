@@ -13,15 +13,19 @@
     <title>Among Us Control Panel</title>
   </head>
   <body>
-      <div class="container">
+      <div class="container-fluid">
         <h1 style="text-align:center">Among Us Control Panel</h1>
       </div>          
+      <div class="container-fluid">
       <input type="text" id="code" placeholder="Game Code" size="8" />
       <input type="submit" value="Send" id="button" onclick="code()" />
+      </div>
       <br>
-      <button onclick="mute()">Mute</button>
-      <button onclick="unmute()">Unmute</button>
-      <button onclick="endGame()">End Game</button>
+      <div class="container-fluid">
+        <button onclick="mute()">Mute</button>
+        <button onclick="unmute()">Unmute</button>
+        <button onclick="endGame()">End Game</button>
+      </div>
     </div>
   </body>
   
