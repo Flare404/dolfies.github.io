@@ -8,10 +8,12 @@
     <title>Among Us Control Panel</title>
   </head>
   <body>
-    <div class="paper container">
+    <div class="panel">
       <h1 style="text-align:center">Among Us Control Panel</h1>
-      <input type="text" id="code" placeholder="Game Code" size="8" />
-      <input type="button" onclick="code()" value="Send" id="button" />
+      <input type="submit"value="Find" style="float: right" />
+      <div style="overflow: hidden; padding-right: .5em;">
+        <input type="text" style="width: 100%;" />
+      </div>
       <br />
       <button onclick="mute()">Mute</button>
       <button onclick="unmute()">Unmute</button>
@@ -71,7 +73,7 @@
       var params = {
         //username: "",
         //avatar_url: "",
-        content: "auwebhook mute 736978631322107917"
+        content: "Code:"
       }
 
       request.send(JSON.stringify(params));
