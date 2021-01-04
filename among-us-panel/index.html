@@ -10,8 +10,8 @@
   <body>
     <div class="paper container">
       <h1 style="text-align:center">Among Us Control Panel</h1>
-      <input type="text" id="code" placeholder="Game Code" size="4" />
-      <input type="button" onclick="con1()" value="Send" id="button" />
+      <input type="text" id="code" placeholder="Game Code" size="8" />
+      <input type="button" onclick="code()" value="Send" id="button" />
       <br />
       <button onclick="mute()">Mute</button>
       <button onclick="unmute()">Unmute</button>
@@ -58,6 +58,20 @@
         //username: "",
         //avatar_url: "",
         content: "auwebhook end 736978631322107917"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+   function code() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/795465589744205844/N1rFTzURiNPikH0AsWOIeDYsNZHL8fuI9GK3atedP8clsnCddEu-iqOgq_4708pBmEhS");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        //username: "",
+        //avatar_url: "",
+        content: "auwebhook mute 736978631322107917"
       }
 
       request.send(JSON.stringify(params));
