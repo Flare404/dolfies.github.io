@@ -9,24 +9,28 @@
     <title>Among Us Control Panel</title>
   </head>
   <body>
-    <div class="flex">
-      <h1 style="text-align:center">Among Us Control Panel</h1>
-      <div>
-          <div class="pull-left">
-              <input type="submit" value="Send" id="button" onclick="code()" />
-          </div>
-          <div>
-              <div class="input-group">
-                  <input type="text" id="code" placeholder="Game Code" size="8" /> 
-              </div>
-          </div>
-      </div>
+      <div class="panel">
+        <h1 style="text-align:center">Among Us Control Panel</h1>
+        <div class="flex">
+         <div>
+           <input type="submit" value="Send" id="button" onclick="code()" />
+         </div>
+         <div>
+           <div class="input-group">
+              <input type="text" id="code" placeholder="Game Code" size="8" />
+           </div>
+         </div>
+      </div>          
       <br />
       <button onclick="mute()">Mute</button>
       <button onclick="unmute()">Unmute</button>
       <button onclick="endGame()">End Game</button>
     </div>
   </body>
+  .flex {
+     display: flex;
+     flex-direction: row;
+   }    
   
 <script>
   function mute() {
