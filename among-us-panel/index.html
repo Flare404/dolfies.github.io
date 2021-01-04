@@ -6,11 +6,13 @@
     <title>Among Us Control Panel</title>
   </head>
   <body>
-    <button onclick="sendMessage()">Send</button>
+    <button onclick="mute()">Mute</button>
+    <button onclick="unmute()">Unmute</button>
+    <button onclick="endGame()">End Game</button>
   </body>
     
 <script>
-    function sendMessage() {
+  function mute() {
       var request = new XMLHttpRequest();
       request.open("POST", "https://discord.com/api/webhooks/795465589744205844/N1rFTzURiNPikH0AsWOIeDYsNZHL8fuI9GK3atedP8clsnCddEu-iqOgq_4708pBmEhS");
 
@@ -19,7 +21,35 @@
       var params = {
         //username: "My Webhook Name",
         //avatar_url: "",
-        content: "Testing"
+        content: "auwebhook mute"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  function unmute() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/795465589744205844/N1rFTzURiNPikH0AsWOIeDYsNZHL8fuI9GK3atedP8clsnCddEu-iqOgq_4708pBmEhS");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        //username: "My Webhook Name",
+        //avatar_url: "",
+        content: "auwebhook unmute"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+   function endGame() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/795465589744205844/N1rFTzURiNPikH0AsWOIeDYsNZHL8fuI9GK3atedP8clsnCddEu-iqOgq_4708pBmEhS");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        //username: "My Webhook Name",
+        //avatar_url: "",
+        content: "auwebhook end"
       }
 
       request.send(JSON.stringify(params));
