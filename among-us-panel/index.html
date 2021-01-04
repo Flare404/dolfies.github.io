@@ -11,8 +11,16 @@
   <body>
     <div class="panel">
       <h1 style="text-align:center">Among Us Control Panel</h1>
-      <input type="text" id="code" placeholder="Game Code" size="8" /> 
-      <input type="submit" value="Send" style="float: right" id="button" onclick="code()" />
+      <div>
+          <div class="pull-left">
+              <input type="submit" value="Send" id="button" onclick="code()" />
+          </div>
+          <div>
+              <div class="input-group">
+                  <input type="text" id="code" placeholder="Game Code" size="8" /> 
+              </div>
+          </div>
+      </div>
       <br />
       <button onclick="mute()">Mute</button>
       <button onclick="unmute()">Unmute</button>
